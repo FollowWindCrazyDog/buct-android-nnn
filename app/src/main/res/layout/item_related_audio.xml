@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:background="?attr/selectableItemBackground"
+    android:layout_marginBottom="15dp">
+
+    <ImageView
+        android:id="@+id/album_avatar"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:src="@drawable/gugong"
+        android:layout_marginRight="20dp"
+        android:scaleType="fitXY"/>
+
+    <LinearLayout
+        android:id="@+id/album_meta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toEndOf="@id/album_avatar">
+        <TextView
+            android:id="@+id/album_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_primary_dark"
+            android:textSize="15sp"
+            android:text="两个人，一些事" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_marginTop="3dp"
+            android:text="温柔陪伴，就是最长情的告白"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/album_avatar"
+        android:layout_alignBottom="@id/album_avatar"
+        android:textSize="12sp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="47773.1万"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="12sp"
+            android:text="176集"/>
+    </LinearLayout>
+</RelativeLayout>

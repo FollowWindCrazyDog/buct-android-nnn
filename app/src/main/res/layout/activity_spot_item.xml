@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/view_need_offset">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appbar_spot_item"
+        android:background="@color/transparent"
+        app:elevation="0dp">
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">-->
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:titleEnabled="false">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:id="@+id/spotItem_image_view"
+                android:layout_height="230dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/gugong"
+                />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@android:color/transparent"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:layout_collapseMode="pin"/>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+
+        <TextView
+            android:id="@+id/tv_spot_item_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@color/color_grey_dark"
+            android:paddingBottom="20dp"
+            android:paddingEnd="88dp"
+            android:paddingStart="16dp"
+            android:paddingTop="20dp"
+            android:text="故宫博物馆"
+            android:textColor="@color/text_primary_dark"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tv_spot_item_english_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+
+            android:text="Forbidden City" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/tv_spot_item_visitors_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="0dp"
+                android:text="999999人去过"
+                android:drawablePadding="2dp"
+                android:drawableStart="@drawable/ic_directions_walk_black_24dp"/>
+
+            <TextView
+                android:id="@+id/tv_spot_item_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="0dp"
+                android:text="距离43km"
+                android:drawablePadding="2dp"
+                android:drawableStart="@drawable/ic_pin_drop_black_24dp"/>
+
+        </LinearLayout>
+
+        <!--</LinearLayout>-->
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tl_spot_item_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/layer_list"
+            app:tabSelectedTextColor="#000"
+            app:tabTextColor="#666"
+            app:textAllCaps="false"
+            android:elevation="1dp"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/spot_item_tab_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/bt_heart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:src="@drawable/heart"
+        app:layout_anchor="@id/tv_spot_item_title"
+        app:layout_anchorGravity="bottom|end"
+        android:background="@drawable/ripple_bg"
+        android:clickable="true"
+        app:layout_behavior=""/>
+
+</android.support.design.widget.CoordinatorLayout>
+
+
+
+

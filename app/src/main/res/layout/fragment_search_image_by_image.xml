@@ -1,0 +1,77 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/search_image_by_image_tips"/>
+
+
+    <View
+        android:id="@+id/mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/mask"
+        android:visibility="gone"/>
+
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/multiple_actions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        fab:fab_addButtonColorNormal="@color/color_white"
+        fab:fab_addButtonColorPressed="@color/grey_200"
+        fab:fab_addButtonPlusIconColor="@color/text_tertiary_dark"
+        fab:fab_labelStyle="@style/menu_labels_style"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_gravity="bottom|end">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/search_animal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="#00c853"
+            fab:fab_title="@string/search_animal"
+            fab:fab_colorPressed="@color/grey_200"
+            fab:fab_icon="@drawable/ic_animal"/>
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/search_plant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="#ffd600"
+            fab:fab_title="@string/search_plant"
+            fab:fab_colorPressed="@color/grey_200"
+            fab:fab_icon="@drawable/ic_plant"/>
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/search_dish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="#d50000"
+            fab:fab_title="@string/search_dish"
+            fab:fab_colorPressed="@color/grey_200"
+            fab:fab_icon="@drawable/ic_dish"/>
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/search_car"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="#304ffe"
+            fab:fab_title="@string/search_car"
+            fab:fab_colorPressed="@color/grey_200"
+            fab:fab_icon="@drawable/ic_car"/>
+
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

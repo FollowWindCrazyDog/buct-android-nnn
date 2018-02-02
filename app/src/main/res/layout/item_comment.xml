@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="?android:listPreferredItemHeight"
+    android:paddingTop="16dp"
+    android:paddingEnd="16dp"
+    android:paddingBottom="16dp"
+    android:clickable="true"
+    android:background="?attr/selectableItemBackground">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/player_avatar"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="12dp"
+        android:layout_marginStart="12dp"
+        android:padding="4dp"
+        android:src="@drawable/ic_account_circle_black_24dp" />
+
+    <TextView
+        android:id="@+id/comment_time_ago"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:text="3 hours ago" />
+
+    <TextView
+        android:id="@+id/comment_author"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/player_avatar"
+        android:layout_toStartOf="@id/comment_time_ago"
+        android:layout_marginEnd="8dp"
+        android:lines="1"
+        android:ellipsize="end"
+        android:text="Nick B" />
+
+    <TextView
+        android:id="@+id/comment_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@id/player_avatar"
+        android:layout_below="@id/comment_author"
+        android:text="Blah blah blah blah blah blah blah blah blah blah blah blah blah" />
+
+    <!--
+    <TextView
+        android:id="@+id/comment_likes_count"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:padding="40dp"
+        android:paddingTop="8dp"
+        android:layout_marginEnd="-8dp"
+        android:gravity="end|center_vertical"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/comment_text"
+        android:textColor="@color/dark_icon"
+        android:text="0"
+        android:background="?android:selectableItemBackgroundBorderless"
+        android:visibility="gone"  />
+
+    <ImageButton
+        android:id="@+id/comment_like"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/comment_likes_count"
+        android:background="?android:selectableItemBackgroundBorderless"
+        android:padding="8dp"
+        android:src="@drawable/heart"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/comment_reply"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:padding="8dp"
+        android:layout_toStartOf="@id/comment_like"
+        android:layout_below="@id/comment_text"
+        android:src="@drawable/ic_reply_black_24dp"
+        android:background="?android:selectableItemBackgroundBorderless"
+        android:visibility="gone" />
+
+        -->
+</RelativeLayout>
+

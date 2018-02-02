@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--手指未触摸-->
+    <item android:state_pressed="false">
+        <layer-list>
+            <item>
+                <!--绘制 圆形-->
+                <shape
+                    android:shape="oval">
+                    <!--填充颜色-->
+                    <solid android:color="@color/color_white"/>
+                    <!--描边 白色 宽度1px-->
+                    <stroke android:color="#FFF"
+                        android:width="1px"/>
+                    <!--内容与该圆形的间距-->
+                    <padding android:bottom="2dp" android:left="2dp" android:right="2dp" android:top="2dp"/>
+                    />
+                </shape>
+            </item>
+            <!--导入图片 -->
+            <item android:drawable="@drawable/ic_web_asset_black_24dp"
+                android:height="20dp"
+                android:width="20dp"/>
+        </layer-list>
+    </item>
+
+    <!--手指触摸-->
+    <item android:state_pressed="true">
+        <layer-list>
+            <item>
+                <shape
+                    android:shape="oval">
+                    <solid android:color="@color/color_white"/>
+                    <stroke android:color="#FFF"
+                        android:width="1px"/>
+                    <padding android:bottom="2dp" android:left="2dp" android:right="2dp" android:top="2dp"/>
+                    />
+                </shape>
+            </item>
+            <item android:drawable="@drawable/ic_web_asset_black_24dp"
+                android:height="20dp"
+                android:width="20dp"/>
+        </layer-list>
+    </item>
+</selector>

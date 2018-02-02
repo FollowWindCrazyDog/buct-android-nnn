@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white"
+    android:elevation="1dp"
+    android:layout_marginTop="10dp" tools:targetApi="lollipop">
+
+    <TextView
+        android:id="@+id/uset_login_type_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/login_type_hint"
+        android:textColor="@color/text_primary_dark"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:layout_marginTop="18dp"/>
+
+    <LinearLayout
+        android:id="@+id/login_type_button_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/uset_login_type_hint"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_phone_iphone_white_24dp"
+            android:background="@drawable/bg_login_mobile"
+            android:padding="10dp"
+            />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_wechat"
+            android:background="@drawable/bg_login_wechat"
+            android:padding="10dp"
+            android:layout_marginLeft="35dp"
+            />
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_weibo"
+            android:background="@drawable/bg_login_weibo"
+            android:padding="10dp"
+            android:layout_marginLeft="35dp"
+            />
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_qq"
+            android:background="@drawable/bg_login_qq"
+            android:padding="10dp"
+            android:layout_marginLeft="35dp"
+            />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/login_other_type_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_type_button_group"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:clickable="true"
+        android:background="?attr/selectableItemBackground"
+        android:text="@string/login_other_type_hint"/>
+</RelativeLayout>

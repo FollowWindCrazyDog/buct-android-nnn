@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:background="@color/color_white">
+
+    <RelativeLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgPhoto"
+            android:layout_width="42dip"
+            android:layout_height="42dip"
+            android:layout_marginRight="8dip"
+            android:src="@mipmap/ic_launcher_round"/>
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imgPhoto"
+            android:text="名字"/>
+
+        <ImageView
+            android:id="@+id/imgVerified"
+            android:layout_width="18dip"
+            android:layout_height="18dip"
+            android:layout_marginLeft="4dip"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/txtName"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/txtDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtName"
+            android:layout_marginTop="2dip"
+            android:layout_toRightOf="@id/imgPhoto"
+            android:text="来自Aisen 2015-01-26"/>
+
+        <!--org.aisen.weibo.sina.ui.widget.AisenTextView-->
+        <TextView
+            android:id="@+id/txtContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgPhoto"
+            android:layout_marginBottom="4dip"
+            android:layout_marginTop="10dip"
+            android:lineSpacingExtra="2dip"
+            android:text="哈哈，我今天发了条微博"/>
+
+        <!--android:background="@drawable/timeline_profile_question_single_normal"-->
+        <RelativeLayout
+            android:id="@+id/layRe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtContent"
+            android:layout_marginLeft="-10dip"
+            android:layout_marginRight="-10dip"
+            android:orientation="vertical"
+            android:paddingBottom="4dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip">
+
+            <View
+                android:id="@+id/layReDivider"
+                android:layout_width="match_parent"
+                android:layout_height="1.5dip"
+                android:layout_marginBottom="8dip"
+                android:background="#ebeef4"/>
+
+            <TextView
+                android:id="@+id/txtReContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layReDivider"
+                android:lineSpacingExtra="2dip"
+                android:text="哈哈，我发了条微博被baby转发了，教主吃屎！"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!--org.aisen.weibo.sina.ui.widget.TimelinePicsView-->
+
+</LinearLayout>

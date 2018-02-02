@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="cn.edu.buct.areatour">
+
+    <!-- 添加百度地图SDK所需要的所有权限 -->
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="com.example.mapbcb.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.example.mapbcb.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <!-- 允许程序改变网络连接状态 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <!-- 读取联系人权限，上传联系人需要用到此权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:name=".common.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppGreenTheme">
+
+        <!-- 添加申请到的百度LBS的API Key -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="tNZRxjxmukyz2kMP9LbGruirmrXUj1ri" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".features.audioplay.AudioListActivity" />
+        <activity android:name=".features.exhibition.arealist.SpotItemActivity" />
+        <activity android:name=".common.activity.BaseActivity" />
+        <activity android:name=".features.exhibition.search.scancode.ScanActivity" />
+        <activity android:name=".features.exhibition.search.scancode.ScanToResultsActivity" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".features.exhibition.search.searchbyimage.SearchByImageActivity" />
+        <activity android:name=".features.exhibition.search.searchbyimage.SearchImageResultsActivity" />
+        <activity android:name=".features.audioplay.AudioDetailActivity" />
+        <activity android:name=".features.audioplay.album.AlbumDetailActivity" />
+        <activity android:name=".features.exhibition.search.rank.RankListActivity" />
+        <activity android:name=".features.usermodule.login.LoginActivity" />
+        <activity android:name=".features.usermodule.register.RegisterActivity" />
+        <activity android:name=".features.usermodule.register.VerificationCodeActivity" />
+        <activity android:name=".features.usermodule.user.UserDataActivity" />
+        <activity android:name=".features.usermodule.setting.SettingActivity" />
+        <activity android:name=".features.exhibition.search.dynamic.DynamicMainActivity" />
+        <activity android:name=".features.exhibition.search.dynamic.DynamicItemActivity" />
+        <activity android:name=".features.usermodule.anchor.AnchorMainActivity" />
+        <activity android:name=".features.usermodule.anchor.SaveUploadVoiceActivity" />
+        <activity android:name=".features.usermodule.anchor.UploadVoiceActivity"></activity>
+        <service
+            android:name=".Service.MusicService"
+            android:enabled="true"
+            android:exported="true"></service>
+        <meta-data
+            android:name="Mob-AppKey"
+            android:value="23776190205a4" />
+        <meta-data
+            android:name="Mob-AppSecret"
+            android:value="e584e333d05686f52b333649521e0ba6" />
+    </application>
+
+</manifest>

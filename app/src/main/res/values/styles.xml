@@ -1,0 +1,103 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+
+
+    <style name="AppWhiteTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/white_primaryColor</item>
+        <item name="colorPrimaryDark">@color/white_primaryDarkColor</item>
+
+        <item name="colorAccent">@color/white_secondaryColor</item>
+
+        <item name="android:textColorPrimary">@color/white_primaryTextColor</item>
+        <item name="android:textColorSecondary">@color/white_secondaryTextColor</item>
+        <item name="android:windowBackground">@color/green_window_background</item>
+    </style>
+    <!--绿色主题颜色-->
+    <style name="AppGreenTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/green_primary</item>
+        <item name="colorPrimaryDark">@color/green_primary_dark</item>
+        <item name="colorAccent">@color/green_accent</item>
+        <item name="android:textColorPrimary">@color/green_primary_text</item>
+        <item name="android:textColorSecondary">@color/green_secondary_text</item>
+        <!--这条属性会让设置界面的设置项有一个左边距
+        <item name="android:icon">@color/green_icons</item>-->
+        <item name="android:divider">@color/green_divider</item>
+        <item name="android:windowBackground">@color/green_window_background</item>
+    </style>
+
+
+    <style name="SpotItemTabTitleTheme" parent="AppGreenTheme">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/text_secondary_dark</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+
+
+    </style>
+
+    <style name="SpotItemTabContentTheme" parent="AppGreenTheme">
+
+    </style>
+
+    <style name="SpotItemTabRowTheme">
+        <item name="android:elevation" tools:targetApi="lollipop">1dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:background">@color/color_white</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+
+
+    <!--浮动按钮菜单-->
+    <style name="menu_labels_style">
+        <item name="android:background">@drawable/fab_label_background</item>
+        <item name="android:textColor">@color/color_white</item>
+    </style>
+
+    <!--登录界面主题-->
+    <style name="login_text_view" parent="AppGreenTheme">
+        <item name="colorControlActivated">@color/green_primary</item>
+    </style>
+
+    <!--对话框主题-->
+    <style name="AppTheme.Dark.Dialog" parent="Theme.AppCompat.Dialog">
+        <item name="colorAccent">@color/colorWhite</item>
+        <item name="android:textColorPrimary">@color/grey_300</item>
+        <item name="android:background">@color/green_primary</item>
+    </style>
+
+    <!--输入验证码显示框主题-->
+    <style name="text_view_style">
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_width">41dp</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/text_primary_dark</item>
+        <item name="android:textSize">30dp</item>
+    </style>
+
+
+    <style name="dialog_transparent">
+        <item name="android:windowFrame">@null</item><!--边框-->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">false</item><!--半透明-->
+        <item name="android:windowBackground">@android:color/transparent</item><!--这里可以设置透明背景-->
+        <item name="android:windowIsFloating">true
+        </item><!-- 浮窗显示为妙 显示在activity智商 不过设不设置貌似没影响 会导致无法patch_parent  false则包裹。-->
+        <item name="android:backgroundDimEnabled">true</item><!-- 模糊效果 不过设不设置貌似没影响 -->
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="dialog_bottom_show" parent="dialog_transparent">
+        <item name="android:windowIsFloating">false
+        </item><!-- 浮窗显示为妙 显示在activity智商 不过设不设置貌似没影响 会导致无法patch_parent-->
+        <item name="android:windowEnterAnimation">@anim/slide_out_to_top</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_to_bottom</item>
+
+    </style>
+
+</resources>

@@ -1,0 +1,280 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="cn.edu.buct.areatour.features.usermodule.user.UserDataFragment"
+    android:background="@color/color_grey_dark">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_white"
+            app:cardElevation="1dp"
+            android:layout_marginTop="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/color_white"
+                android:padding="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="关注的人"
+                            android:textSize="12sp"
+                            android:textColor="@color/green_divider"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="32"
+                            android:typeface="monospace"
+                            android:textColor="@color/text_primary_dark"
+                            android:textSize="25sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="被关注的人"
+                            android:textSize="12sp"
+                            android:textColor="@color/green_divider"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="32"
+                            android:typeface="monospace"
+                            android:textColor="@color/text_primary_dark"
+                            android:textSize="25sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="收藏的音频"
+                            android:textSize="12sp"
+                            android:textColor="@color/green_divider"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="32"
+                            android:typeface="monospace"
+                            android:textColor="@color/text_primary_dark"
+                            android:textSize="25sp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="一个简单学生，何炜。"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_white"
+            app:cardElevation="1dp"
+            android:layout_marginTop="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/color_white">
+                <!--我的收藏-->
+                <RelativeLayout
+                    android:clickable="true"
+                    android:id="@+id/user_star"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ripple_bg_white">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_record_voice_over_black_24dp"
+                        android:drawableTint="@color/text_tertiary_dark"
+                        android:drawablePadding="12dp"
+                        android:gravity="center_vertical"
+                        android:padding="12dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="我的收听"
+                        android:textColor="@android:color/black"/>
+                </RelativeLayout>
+                <View
+                    android:layout_height="0.5px"
+                    android:layout_width="match_parent"
+                    android:background="@color/grey_300"
+                    android:layout_marginLeft="48dp"/>
+                <!--我的关注-->
+                <RelativeLayout
+                    android:clickable="true"
+                    android:id="@+id/user_watch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/ripple_bg_white">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_grade_black_24dp"
+                        android:drawableTint="@color/text_tertiary_dark"
+                        android:drawablePadding="12dp"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_vertical"
+                        android:padding="12dp"
+                        android:text="我的收藏"
+                        android:textColor="@android:color/black"/>
+
+                </RelativeLayout>
+                <View
+                    android:layout_height="0.5px"
+                    android:layout_width="match_parent"
+                    android:background="@color/grey_300"
+                    android:layout_marginLeft="48dp"/>
+                <RelativeLayout
+                    android:clickable="true"
+                    android:id="@+id/user_like"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/ripple_bg_white">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_thumb_up_black_24dp"
+                        android:drawableTint="@color/text_tertiary_dark"
+                        android:drawablePadding="12dp"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_vertical"
+                        android:padding="12dp"
+                        android:text="我的点赞"
+                        android:textColor="@android:color/black"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_white"
+            app:cardElevation="1dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/color_white">
+                <!--我的收藏-->
+                <RelativeLayout
+                    android:clickable="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ripple_bg_white">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_record_voice_over_black_24dp"
+                        android:drawableTint="@color/text_tertiary_dark"
+                        android:drawablePadding="12dp"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_vertical"
+                        android:padding="12dp"
+                        android:text="我的关注"
+                        android:textColor="@android:color/black"/>
+                </RelativeLayout>
+                <View
+                    android:layout_height="0.5px"
+                    android:layout_width="match_parent"
+                    android:background="@color/grey_300"
+                    android:layout_marginLeft="48dp"/>
+                <!--我的关注-->
+                <RelativeLayout
+                    android:clickable="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/ripple_bg_white">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_grade_black_24dp"
+                        android:drawableTint="@color/text_tertiary_dark"
+                        android:drawablePadding="12dp"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_vertical"
+                        android:padding="12dp"
+                        android:text="我的粉丝"
+                        android:textColor="@android:color/black"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+
+
+
+</android.support.v4.widget.NestedScrollView>

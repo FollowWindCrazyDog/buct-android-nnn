@@ -1,0 +1,24 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="statusbar_view_height">0dp</dimen>
+    <dimen name="search_view_inset">5dp</dimen>
+    <dimen name="sliding_search_view_header_height">250dp</dimen>
+
+    <dimen name="refresh_header_height_twitter">80dp</dimen>
+    <dimen name="load_more_footer_height_twitter">60dp</dimen>
+    <dimen name="load_more_footer_height_classic">60dp</dimen>
+
+    <!--from qssq-->
+    <dimen name="theme_margin_left_big">12dp</dimen>
+    <dimen name="dp_margin_media">10dp</dimen>
+    <dimen name="theme_margin_left">10dp</dimen>
+    <dimen name="theme_font_size_42px">14dp</dimen>
+    <dimen name="theme_font_size_big_title_size_46px">15.3dp</dimen>
+    <dimen name="dp_music_play_top_buttom">15dp</dimen>
+    <dimen name="default_font_size">14dp</dimen>
+    <dimen name="dialog_music_station_height">260dp</dimen>
+
+
+</resources>

@@ -1,0 +1,94 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.edu.buct.areatour.features.mapguide.MapGuideFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <FrameLayout
+        android:id="@+id/bmapViewFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <com.baidu.mapapi.map.TextureMapView
+        android:id="@+id/bmapView"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_width="wrap_content" >
+
+    </com.baidu.mapapi.map.TextureMapView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:id="@+id/search_top_position">
+                </FrameLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/search_center_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="vertical"
+                    android:clickable="true"
+                    />
+
+            </LinearLayout>
+            <com.arlib.floatingsearchview.FloatingSearchView
+                android:id="@+id/floating_search_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:floatingSearch_close_search_on_keyboard_dismiss="false"
+                app:floatingSearch_dimBackground="false"
+                app:floatingSearch_dismissOnOutsideTouch="true"
+                app:floatingSearch_leftActionMode="showSearch"
+                app:floatingSearch_menu="@menu/menu_search_view"
+                app:floatingSearch_searchBarMarginLeft="@dimen/search_view_inset"
+                app:floatingSearch_searchBarMarginRight="@dimen/search_view_inset"
+                app:floatingSearch_searchBarMarginTop="@dimen/search_view_inset"
+                app:floatingSearch_searchHint="搜索景区/学校/银行/饭店等"
+                app:floatingSearch_showSearchKey="true"
+                app:floatingSearch_suggestionsListAnimDuration="250"
+                />
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/dw_bt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="bottom|end"
+                android:layout_marginBottom="133dp"
+                android:layout_marginEnd="11dp"
+                android:layout_marginRight="11dp"
+                android:src="@drawable/ic_location"
+                app:backgroundTint="@color/background"
+                app:elevation="@dimen/search_view_corner_radius"
+                app:fabSize="mini"
+                app:rippleColor="@color/clear_btn_color" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/dw_bt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/dw_bt1"
+                android:layout_alignLeft="@+id/dw_bt1"
+                android:layout_alignStart="@+id/dw_bt1"
+                android:layout_gravity="bottom|end"
+                android:layout_marginBottom="18dp"
+                android:src="@drawable/ic_compass"
+                app:backgroundTint="@color/background"
+                app:elevation="@dimen/search_view_corner_radius"
+                app:fabSize="mini"
+                app:rippleColor="@color/clear_btn_color" />
+    </RelativeLayout>
+    </FrameLayout>
+
+</FrameLayout>

@@ -1,0 +1,97 @@
+<resources>
+
+    <item name="visible" type="id" />
+    <item name="masked" type="id" />
+
+    <string name="app_name">景行于音</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!--顶部标题栏文字-->
+    <string name="title_map_guide">地图导览</string>
+    <string name="title_search_main">搜索展品</string>
+    <string name="title_area_list_title">景区列表</string>
+    <string name="title_user">用户中心</string>
+
+    <!--搜索模块文字-->
+    <string name="search_intro">大家都在搜</string>
+    <string name="title_scan_activity">二维码/条码</string>
+    <string name="action_voice_rec">语音搜索</string>
+
+    <string name="test_data_content">北京故宫是中国明清两代的皇家宫殿，旧称为紫禁城，位于北京中轴线的中心，是中国古代宫廷建筑之精华。北京故宫以三大殿为中心，占地面积72万平方米，建筑面积约15万平方米，有大小宫殿七十多座，房屋九千余间。是世界上现存规模最大、保存最为完整的木质结构古建筑之一。</string>
+    <string name="loading">loading</string>
+
+    <!--景区详情文字-->
+    <string name="base_line">我是有底线的</string>
+
+    <string name="search_image_by_image_tips">点击右下角图标上传图标</string>
+    <string name="search_image_by_word_tips">点击右下角图标输入关键字</string>
+
+    <!--图片识别-->
+    <string name="search_animal">动物识别</string>
+    <string name="search_plant">植物识别</string>
+    <string name="search_dish">菜品识别</string>
+    <string name="search_car">车型识别</string>
+
+    <string name="search_by_word_input_hint">输入搜索关键词</string>
+    <string name="search_confidence">0.99</string>
+
+    <string name="rank_list_title">排行榜</string>
+    <string name="login_type_hint">登录，体验更多精彩功能</string>
+    <string name="login_other_type_hint">其他方式登录</string>
+
+    <!--设置页面-->
+
+    <!--基本设置-->
+    <string name="pref_key_primary_setting">primary_setting_key</string>
+    <string name="pref_title_primary_setting">基本设置</string>
+
+    <string name="pref_key_lower_flow_mode">pref_key_lower_flow_mode</string>
+    <string name="pref_title_lower_flow_mode">省流量模式</string>
+    <string name="pref_summary_lower_flow_mode">仅在WIFI环境下加载图片和音频</string>
+
+    <string name="pref_key_remove_cache">pref_key_remove_cache</string>
+    <string name="pref_title_remove_cache">清除缓存</string>
+    <string name="pref_summary_remove_cache">包括图片、音频和其他加载缓存</string>
+
+
+    <!--账号设置-->
+    <string name="pref_key_account_setting">pref_key_account_setting</string>
+    <string name="pref_title_account_setting">账号设置</string>
+
+    <string name="pref_key_account_safe">pref_key_account_safe</string>
+    <string name="pref_title_account_safe">账号与安全</string>
+    <string name="pref_summary_account_safe">管理账号安全、修改账号密码等</string>
+
+    <string name="pref_key_notice_setting">pref_key_notice_setting</string>
+    <string name="pref_title_notice_setting">通知设置</string>
+    <string name="pref_summary_notice_setting">管理消息提醒的偏好等</string>
+
+    <!--关于与帮助-->
+    <string name="pref_key_about_help">pref_key_about_help</string>
+    <string name="pref_title_about_help">关于与帮助</string>
+
+    <string name="pref_key_suggestion">pref_key_suggestion</string>
+    <string name="pref_title_suggestion">意见反馈</string>
+
+    <string name="pref_key_licence">pref_key_licence</string>
+    <string name="pref_title_licence">开源许可</string>
+
+    <string name="pref_key_five_star">pref_key_five_star</string>
+    <string name="pref_title_five_star">去评价</string>
+    <string name="pref_summary_five_star">如果觉得App不错的话，去给我们五星好评吧~</string>
+
+    <string name="pref_key_update">pref_key_update</string>
+    <string name="pref_title_update">检查更新</string>
+    <string name="pref_summary_update">当前版本为1.0.0（001）</string>
+
+    <string name="pref_key_exit">pref_key_exit</string>
+    <string name="pref_title_exit">退出账号</string>
+
+
+    <!--服务器网址-->
+    <string name="server_url">http://39.106.122.103</string>
+
+</resources>

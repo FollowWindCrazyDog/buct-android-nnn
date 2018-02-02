@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:key="@string/pref_key_primary_setting"
+        android:title="@string/pref_title_primary_setting" />
+    <SwitchPreference
+        android:key="@string/pref_key_lower_flow_mode"
+        android:title="@string/pref_title_lower_flow_mode"
+        android:summary="@string/pref_summary_lower_flow_mode"/>
+    <Preference
+        android:enabled="false"
+        android:key="@string/pref_key_remove_cache"
+        android:summary="@string/pref_summary_remove_cache"
+        android:title="@string/pref_title_remove_cache" />
+
+
+    <PreferenceCategory
+        android:key="@string/pref_key_account_setting"
+        android:title="@string/pref_title_account_setting" />
+    <Preference
+        android:key="@string/pref_key_account_safe"
+        android:title="@string/pref_title_account_safe"
+        android:summary="@string/pref_summary_account_safe"/>
+    <Preference
+        android:key="@string/pref_key_notice_setting"
+        android:title="@string/pref_title_notice_setting"
+        android:summary="@string/pref_summary_notice_setting"/>
+
+
+    <PreferenceCategory
+        android:key="@string/pref_key_about_help"
+        android:title="@string/pref_title_about_help" />
+    <Preference
+        android:key="@string/pref_key_suggestion"
+        android:title="@string/pref_title_suggestion"/>
+
+    <Preference
+        android:key="@string/pref_key_licence"
+        android:title="@string/pref_title_licence"/>
+    <Preference
+        android:key="@string/pref_key_five_star"
+        android:title="@string/pref_title_five_star"
+        android:summary="@string/pref_summary_five_star"/>
+    <Preference
+        android:key="@string/pref_key_update"
+        android:title="@string/pref_title_update"
+        android:summary="@string/pref_summary_update"/>
+
+
+
+    <Preference
+        android:key="@string/pref_key_exit"
+        android:title="@string/pref_title_exit" />
+
+
+
+</PreferenceScreen>

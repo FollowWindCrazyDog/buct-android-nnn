@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 主题基色调 -->
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--绿色主题-->
+    <color name="green_primary">#009688</color>
+    <color name="green_primary_dark">#00796B</color>
+    <color name="green_primary_light">#B2DFDB</color>
+    <color name="green_accent">#FF4081</color>
+    <color name="green_primary_text">#212121</color>
+    <color name="green_secondary_text">#757575</color>
+    <color name="green_icons">#FFFFFF</color>
+    <color name="green_divider">#BDBDBD</color>
+    <color name="green_window_background">#FaFaFa</color>
+
+    <!--白色主题-->
+    <color name="white_primaryColor">#fafafa</color>
+    <color name="white_primaryLightColor">#ffffff</color>
+    <color name="white_primaryDarkColor">#c7c7c7</color>
+    <color name="white_secondaryColor">#039be5</color>
+    <color name="white_secondaryLightColor">#63ccff</color>
+    <color name="white_secondaryDarkColor">#006db3</color>
+    <color name="white_primaryTextColor">#424242</color>
+    <color name="white_secondaryTextColor">#fafafa</color>
+
+
+    <!-- 常用颜色 -->
+    <color name="color_white">#ffffff</color>
+    <color name="color_grey_dark">#f2f2f2</color>
+    <color name="text_primary_dark">#de000000</color> <!-- 87% -->
+    <color name="text_secondary_dark">#8a000000</color> <!-- 54% -->
+    <color name="text_tertiary_dark">#61000000</color> <!-- 38% -->
+    <color name="text_primary_light">#ffffffff</color>
+    <color name="text_secondary_light">#b3ffffff</color> <!-- 70% -->
+    <color name="text_disabled_light">#4dffffff</color> <!-- 30% -->
+    <color name="ripple_light">#99ffffff</color>
+    <color name="ripple_dark">@color/mid_grey</color>
+    <color name="background_light">#fafafa</color> <!-- grey 50 -->
+    <color name="background_lightish">#e0e0e0</color> <!-- grey 300 -->
+    <color name="background_card">#ffffff</color>
+    <color name="background_dark">#ff333333</color>
+    <color name="immersive_bars">#99000000</color>
+    <color name="light_immersive_bars">#b3eeeeee</color> <!-- 70% grey 200 -->
+    <color name="light_status_bar">@color/immersive_bars</color> <!-- overridden on v23+ -->
+    <color name="light_nav_bar">@color/immersive_bars</color> <!-- overridden on v26+ -->
+    <color name="status_bar_back">#ff676767</color> <!-- this is blended with immersive_bars to produce the desired status bar color i.e. background_super_dark -->
+    <color name="background_super_dark">#ff292929</color>
+    <color name="scrim">#99323232</color>
+    <color name="mid_grey">#40808080</color>
+    <color name="light_grey">#fff5f5f5</color>
+    <color name="grey_200">#ffeeeeee</color>
+    <color name="grey_300">#ffe0e0e0</color>
+    <color name="grey_400">#8a8a8a</color>
+    <color name="content_placeholder">#ffe0e0e0</color>
+    <color name="dark_icon">#99000000</color> <!-- 60% black-->
+    <color name="dark_icon_half_alpha">#4d000000</color> <!-- 30% black-->
+    <color name="dark_icon_on_primary">#ff2a6046</color> <!-- 60% black on @color/primary -->
+    <color name="inline_action_icon">#ff757575</color> <!-- grey 600 -->
+    <color name="light_icon">#ffffffff</color>
+    <color name="divider">#1f000000</color> <!-- 12% black -->
+    <color name="page_indicator_dark">#80333333</color>
+    <color name="page_indicator_dark_selected">#ff333333</color>
+    <color name="selected_comment_background">#ffffffff</color>
+    <color name="error">#ffdd2c00</color>
+
+
+    <color name="bili_color_white">#ffffff</color>
+    <color name="search_color_item_select">#66666666</color>
+    <color name="bili_color_light_gray">#F2F2F2</color>
+    <color name="bili_color_item_select">#66666666</color>
+    <color name="transparent">#00000000</color>
+    <color name="black">#000000</color>
+    <color name="black_900">#393737</color>
+
+
+    <color name="co_text_blue">#007aff</color>
+    <color name="co_global_white">#ffffff</color>
+    <color name="slategray">#708090</color><!--灰石色 -->
+    <color name="cornsilk">#FFF8DC</color><!--米绸色 -->
+
+    <color name="seashell">#FFF5EE</color><!--海贝色 -->
+
+    <color name="mask">#463b5997</color>
+
+</resources>

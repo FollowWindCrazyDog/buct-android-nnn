@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\11633\Downloads\buct-android-nnn\buct-android-nnn\buct-android-master.iml" filepath="C:\Users\11633\Downloads\buct-android-nnn\buct-android-nnn\buct-android-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/buct-android-nnn.iml" filepath="$PROJECT_DIR$/buct-android-nnn.iml" />
+    </modules>
+  </component>
+</project>

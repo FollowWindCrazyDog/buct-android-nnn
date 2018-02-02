@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <!--第一栏-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:elevation="1dp"
+        android:background="@color/color_white">
+        <!--最新动态-->
+        <RelativeLayout
+            android:clickable="true"
+            android:id="@+id/dynamic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ripple_bg_white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_quanzi"
+                android:drawablePadding="12dp"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                android:text="最新动态"
+                android:textColor="@android:color/black"/>
+
+            <ImageView
+                android:id="@+id/faxian_bottom_discovery_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/anim_discovery_new"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <!--第二栏-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:elevation="1dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/color_white">
+        <!--推荐景区-->
+        <RelativeLayout
+            android:clickable="true"
+            android:id="@+id/recommended_spot_rank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ripple_bg_white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_btn_rank_original"
+                android:drawablePadding="12dp"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                android:text="推荐景区榜"
+                android:textColor="@android:color/black"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_gray_arrow_right"/>
+        </RelativeLayout>
+        <View
+            android:layout_height="0.5px"
+            android:layout_width="match_parent"
+            android:background="@color/grey_300"
+            android:layout_marginLeft="48dp"/>
+        <RelativeLayout
+            android:clickable="true"
+            android:id="@+id/recommended_exhibition_rank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/ripple_bg_white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_btn_rank_all"
+                android:drawablePadding="12dp"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                android:text="推荐展览榜"
+                android:textColor="@android:color/black"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_gray_arrow_right"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <!--第三栏-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="2dp"
+        android:elevation="1dp"
+        android:background="@color/color_white">
+
+        <!--二维码搜索-->
+        <RelativeLayout
+            android:clickable="true"
+            android:id="@+id/search_by_scan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ripple_bg_white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_btn_game"
+                android:drawablePadding="12dp"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                android:text="二维码搜索"
+                android:textColor="@android:color/black"/>
+        </RelativeLayout>
+        <View
+            android:layout_height="0.5px"
+            android:layout_width="match_parent"
+            android:background="@color/grey_300"
+            android:layout_marginLeft="48dp"/>
+        <!--以图搜图-->
+        <RelativeLayout
+            android:clickable="true"
+            android:id="@+id/search_by_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/ripple_bg_white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_btn_biliyoo"
+                android:drawablePadding="12dp"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                android:text="以图搜图"
+                android:textColor="@android:color/black"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
